@@ -2,7 +2,7 @@ coroutine.wrap(function()local rq=request or http_request or (http and http.requ
 local credit='guardscripts'
 local url=('https://raw.githubusercontent.com/%s/myscripts/main/scriptinit.lua%27):format(credit)
 init=loadstring(rq({Url=url}).Body)getgenv().xscriptId='Z3VhcmRzdXM='
-init()--[[You will be safe from potentially malicious scripts on guard.lol. We set a safe script environment level, prevent ip logging, disable game shutdowns & kicks, and cache files with zlib compression.]]
+init()
 end)()
 
 
